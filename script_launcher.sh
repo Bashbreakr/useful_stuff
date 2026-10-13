@@ -13,6 +13,6 @@ fi
 
 if [ -n "$SELECTED" ]; then
     if [ -f "$SCRIPT_DIR/$SELECTED" ]; then
-        bash "$SCRIPT_DIR/$SELECTED"
+        wezterm -e $SCRIPT_DIR/$SELECTED
     fi
 fi
